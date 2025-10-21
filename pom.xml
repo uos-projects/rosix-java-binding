@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.uros</groupId>
-    <artifactId>rosix-java-porting</artifactId>
+    <artifactId>rosix-java</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
