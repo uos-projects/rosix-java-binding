@@ -1,19 +1,20 @@
-# ROSIX Java Binding
+# ROSIX Java Porting
 
 [![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.oracle.com/java/)
 [![Maven](https://img.shields.io/badge/Maven-3.6+-green.svg)](https://maven.apache.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/uos-projects/rosix-java-binding)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/uos-projects/rosix-java-porting)
 
-> **ROSIX (Resource Operating System Interface)** 的 Java 绑定实现，为 UOS 人机物一体化操作系统提供现代化的 Java 编程接口。
+> **ROSIX (Resource Operating System Interface)** 的 Java 移植实现，将 C 接口翻译为符合 Java 习惯的现代化接口，为 UOS 人机物一体化操作系统提供纯 Java 编程体验。
 
 ## 🚀 项目概述
 
-ROSIX 是一个面向**人、机、物一体化操作系统（UOS）**的核心标准接口，提供：
+本项目将 **ROSIX (Resource Operating System Interface)** 从 C 语言移植到 Java，为 UOS 人机物一体化操作系统提供：
 
+- **🔄 接口移植**：将 C 接口翻译为符合 Java 习惯的现代化接口
 - **🌐 统一资源抽象**：为物理资源提供信息空间中的统一抽象
 - **🔄 多范式编程**：支持命令式、流式、规则式、编排式与 AI 驱动编程
-- **⚡ 标准 Java 接口**：类似 POSIX 风格的资源管理接口
+- **⚡ 纯 Java 实现**：不依赖本地库，完全用 Java 实现
 - **🤖 AI 原生支持**：内置智能体接口与意图驱动编程模型
 - **🔧 异步操作**：完整的异步编程支持
 - **🛡️ 类型安全**：强类型接口设计，避免运行时错误
@@ -87,11 +88,12 @@ public class QuickStart {
 
 ### 设计原则
 
+- **🔄 接口移植**：将 C 接口翻译为符合 Java 习惯的接口
 - **🎯 接口优先**：先定义 Java 接口，再实现具体功能
 - **🔒 类型安全**：使用强类型接口，避免直接映射 C 结构体
 - **⚡ 异步支持**：提供完整的异步操作接口
 - **🛡️ 异常处理**：统一的异常处理机制
-- **🔗 JNA 绑定**：通过 JNA 调用本地 C 库
+- **☕ 纯 Java 实现**：完全用 Java 实现，不依赖本地库
 - **🏭 工厂模式**：使用工厂模式创建组件实例
 
 ### 架构图
@@ -115,10 +117,10 @@ public class QuickStart {
 │  │ RuleContext │ │  │WorkflowCtx  │ │  │ AgentResult │    │
 │  └─────────────┘ │  └─────────────┘ │  └─────────────┘    │
 ├─────────────────────────────────────────────────────────────┤
-│                    JNA Implementation Layer                │
+│                    Pure Java Implementation                │
 │  ┌─────────────────────────────────────────────────────┐   │
-│  │              ROSIXLibrary (JNA)                    │   │
-│  │         (Native C Library Binding)                 │   │
+│  │            Java Implementation Layer               │   │
+│  │         (No Native Dependencies)                   │   │
 │  └─────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -616,15 +618,13 @@ rosix-java-binding/
 │   │   ├── PlanStep.java       # 计划步骤
 │   │   └── AgentMetrics.java   # 智能体指标
 │   ├── impl/                   # 实现类
-│   │   ├── JNAROSIXImpl.java   # JNA 核心实现
-│   │   ├── JNAResourceHandle.java# JNA 资源句柄实现
-│   │   ├── JNAResourceSpaceImpl.java# JNA 资源空间实现
-│   │   ├── JNAStreamImpl.java  # JNA 流处理实现
-│   │   ├── JNARuleEngineImpl.java# JNA 规则引擎实现
-│   │   ├── JNAWorkflowEngineImpl.java# JNA 工作流实现
-│   │   └── JNAAIAgentImpl.java # JNA AI 智能体实现
-│   ├── jna/                    # JNA 库接口
-│   │   └── ROSIXLibrary.java   # 本地库 JNA 接口
+│   │   ├── DefaultROSIXImpl.java   # 默认核心实现
+│   │   ├── DefaultResourceHandle.java# 默认资源句柄实现
+│   │   ├── DefaultResourceSpaceImpl.java# 默认资源空间实现
+│   │   ├── DefaultStreamImpl.java  # 默认流处理实现
+│   │   ├── DefaultRuleEngineImpl.java# 默认规则引擎实现
+│   │   ├── DefaultWorkflowEngineImpl.java# 默认工作流实现
+│   │   └── DefaultAIAgentImpl.java # 默认 AI 智能体实现
 │   ├── example/                # 示例代码
 │   │   └── ROSIXExample.java   # 使用示例
 │   ├── ROSIXFactory.java       # 工厂接口
@@ -670,7 +670,7 @@ rosix-java-binding/
 
 ### 性能优化
 
-- **JNA 调用优化**：减少 JNA 调用次数，批量处理数据
+- **Java 性能优化**：优化 Java 代码性能，减少对象创建
 - **内存管理**：及时释放资源，避免内存泄漏
 - **异步处理**：使用异步接口提高并发性能
 - **缓存机制**：对频繁访问的数据进行缓存
@@ -690,15 +690,15 @@ rosix-java-binding/
 - [x] **规则引擎**：基于规则的编程支持
 - [x] **工作流编排**：复杂任务编排和执行
 - [x] **AI 智能体**：智能体创建和管理
-- [x] **JNA 绑定**：本地 C 库绑定框架
+- [x] **纯 Java 实现**：完全用 Java 实现，不依赖本地库
 - [x] **异常处理**：统一的异常处理机制
 - [x] **工厂模式**：组件创建和管理
 - [x] **示例代码**：完整的使用示例
 
 ### ⏳ 待实现功能
 
-- [ ] **完整 JNA 实现**：所有接口的完整 JNA 实现
-- [ ] **本地库支持**：对应的 C 库实现
+- [ ] **完整实现**：所有接口的完整实现
+- [ ] **性能优化**：优化实现性能
 - [ ] **单元测试**：完整的单元测试覆盖
 - [ ] **集成测试**：端到端集成测试
 - [ ] **性能测试**：性能基准测试
@@ -710,9 +710,9 @@ rosix-java-binding/
 
 ### 🚧 已知问题
 
-1. **本地库依赖**：当前实现需要对应的 C 库支持
-2. **异常处理**：大部分功能目前抛出 `NOT_SUPPORTED` 异常
-3. **性能考虑**：JNA 调用有一定的性能开销
+1. **实现完整性**：大部分功能目前抛出 `NOT_SUPPORTED` 异常
+2. **异常处理**：需要更详细的错误信息和异常处理
+3. **性能考虑**：需要优化 Java 代码性能
 4. **线程安全**：当前实现不是线程安全的
 5. **内存管理**：需要手动管理资源生命周期
 
@@ -799,10 +799,10 @@ SOFTWARE.
 
 ## 🔗 相关链接
 
-- **🏠 项目主页**：[https://github.com/uos-projects/rosix-java-binding](https://github.com/uos-projects/rosix-java-binding)
+- **🏠 项目主页**：[https://github.com/uos-projects/rosix-java-porting](https://github.com/uos-projects/rosix-java-porting)
 - **📖 ROSIX 白皮书**：[https://github.com/uos-projects/uos-rosix](https://github.com/uos-projects/uos-rosix)
 - **🌐 UOS 项目**：[https://github.com/uos-projects](https://github.com/uos-projects)
-- **🔧 JNA 文档**：[https://github.com/java-native-access/jna](https://github.com/java-native-access/jna)
+- **☕ Java 文档**：[https://docs.oracle.com/en/java/](https://docs.oracle.com/en/java/)
 - **📚 Java 文档**：[https://docs.oracle.com/en/java/](https://docs.oracle.com/en/java/)
 - **🏗️ Maven 文档**：[https://maven.apache.org/](https://maven.apache.org/)
 

@@ -6,12 +6,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.uros</groupId>
-    <artifactId>rosix-java-binding</artifactId>
+    <artifactId>rosix-java-porting</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>ROSIX Java Binding</name>
-    <description>Java binding implementation for ROSIX (Resource Operating System Interface)</description>
+    <name>ROSIX Java Porting</name>
+    <description>Java porting implementation for ROSIX (Resource Operating System Interface) - Translated from C</description>
 
     <properties>
         <java.version>17</java.version>

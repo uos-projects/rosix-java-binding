@@ -10,37 +10,37 @@ import com.uros.rosix.workflow.WorkflowEngine;
 
 /**
  * 默认 ROSIX 工厂实现
- * 提供基于 JNA 的本地库绑定实现
+ * 提供纯 Java 实现，不依赖本地库
  */
 public class DefaultROSIXFactory implements ROSIXFactory {
     
     @Override
     public ROSIX createROSIX() {
-        return new JNAROSIXImpl();
+        return new DefaultROSIXImpl();
     }
-    
+
     @Override
     public ResourceSpace createResourceSpace() {
-        return new JNAResourceSpaceImpl();
+        return new DefaultResourceSpaceImpl();
     }
-    
+
     @Override
     public ROSIXStream createStream() {
-        return new JNAStreamImpl();
+        return new DefaultStreamImpl();
     }
-    
+
     @Override
     public RuleEngine createRuleEngine() {
-        return new JNARuleEngineImpl();
+        return new DefaultRuleEngineImpl();
     }
-    
+
     @Override
     public WorkflowEngine createWorkflowEngine() {
-        return new JNAWorkflowEngineImpl();
+        return new DefaultWorkflowEngineImpl();
     }
-    
+
     @Override
     public AIAgent createAIAgent() {
-        return new JNAAIAgentImpl();
+        return new DefaultAIAgentImpl();
     }
 }

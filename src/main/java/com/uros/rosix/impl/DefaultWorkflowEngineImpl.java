@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 基于 JNA 的工作流引擎实现
- * 提供复杂多资源、多阶段协同编排功能
+ * 默认的工作流引擎实现
+ * 提供复杂多资源、多阶段协同编排功能，纯 Java 实现
  */
-public class JNAWorkflowEngineImpl implements WorkflowEngine {
+public class DefaultWorkflowEngineImpl implements WorkflowEngine {
     
     @Override
     public void createWorkflow(String name) throws ROSIXException {

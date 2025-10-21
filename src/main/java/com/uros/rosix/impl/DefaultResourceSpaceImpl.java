@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 基于 JNA 的资源空间实现
- * 提供资源的时空语义管理功能
+ * 默认的资源空间实现
+ * 提供资源的时空语义管理功能，纯 Java 实现
  */
-public class JNAResourceSpaceImpl implements ResourceSpace {
+public class DefaultResourceSpaceImpl implements ResourceSpace {
     
     @Override
     public ResourceRef resolve(String uri) throws ROSIXException {

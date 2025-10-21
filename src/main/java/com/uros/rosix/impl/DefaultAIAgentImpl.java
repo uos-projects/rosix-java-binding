@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 基于 JNA 的 AI 智能体实现
- * 提供意图驱动和语义理解能力
+ * 默认的 AI 智能体实现
+ * 提供意图驱动和语义理解能力，纯 Java 实现
  */
-public class JNAAIAgentImpl implements AIAgent {
+public class DefaultAIAgentImpl implements AIAgent {
     
     @Override
     public void createAgent(AgentConfig config) throws ROSIXException {

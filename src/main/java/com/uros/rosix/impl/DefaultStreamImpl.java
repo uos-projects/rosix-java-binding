@@ -8,10 +8,10 @@ import com.uros.rosix.stream.StreamProcessor;
 import com.uros.rosix.stream.StreamStats;
 
 /**
- * 基于 JNA 的流处理器实现
- * 提供实时数据处理和事件驱动计算功能
+ * 默认的流处理器实现
+ * 提供实时数据处理和事件驱动计算功能，纯 Java 实现
  */
-public class JNAStreamImpl implements ROSIXStream {
+public class DefaultStreamImpl implements ROSIXStream {
     
     private boolean active = false;
     private boolean paused = false;

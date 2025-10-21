@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 基于 JNA 的规则引擎实现
- * 提供基于规则的编程功能
+ * 默认的规则引擎实现
+ * 提供基于规则的编程功能，纯 Java 实现
  */
-public class JNARuleEngineImpl implements RuleEngine {
+public class DefaultRuleEngineImpl implements RuleEngine {
     
     @Override
     public void defineRuleSet(String name, List<Rule> rules) throws ROSIXException {
