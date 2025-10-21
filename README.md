@@ -100,7 +100,14 @@ public class QuickStart {
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    ROSIX Java Binding                      │
+│                    ROSIX Java Porting                       │
+├─────────────────────────────────────────────────────────────┤
+│  Rule Engine     │  Workflow        │  AI Agent           │
+│  ┌─────────────┐ │  ┌─────────────┐ │  ┌─────────────┐    │
+│  │ RuleEngine  │ │  │WorkflowEng  │ │  │   AIAgent   │    │
+│  │    Rule     │ │  │    Task     │ │  │ AgentConfig │    │
+│  │ RuleContext │ │  │WorkflowCtx  │ │  │ AgentResult │    │
+│  └─────────────┘ │  └─────────────┘ │  └─────────────┘    │
 ├─────────────────────────────────────────────────────────────┤
 │  Core Interfaces  │  Resource Space  │  Stream Processing  │
 │  ┌─────────────┐  │  ┌─────────────┐ │  ┌─────────────┐    │
@@ -109,13 +116,6 @@ public class QuickStart {
 │  │  OpenMode   │  │  │TemporalCtx │ │  │StreamStats  │    │
 │  └─────────────┘  │  │SemanticProf│ │  └─────────────┘    │
 │                   │  └─────────────┘ │                     │
-├─────────────────────────────────────────────────────────────┤
-│  Rule Engine     │  Workflow        │  AI Agent           │
-│  ┌─────────────┐ │  ┌─────────────┐ │  ┌─────────────┐    │
-│  │ RuleEngine  │ │  │WorkflowEng  │ │  │   AIAgent   │    │
-│  │    Rule     │ │  │    Task     │ │  │ AgentConfig │    │
-│  │ RuleContext │ │  │WorkflowCtx  │ │  │ AgentResult │    │
-│  └─────────────┘ │  └─────────────┘ │  └─────────────┘    │
 ├─────────────────────────────────────────────────────────────┤
 │                    Java Implementation                   │
 │  ┌─────────────────────────────────────────────────────┐   │
