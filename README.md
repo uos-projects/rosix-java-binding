@@ -3,7 +3,7 @@
 [![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.oracle.com/java/)
 [![Maven](https://img.shields.io/badge/Maven-3.6+-green.svg)](https://maven.apache.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/uos-projects/rosix-java-porting)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/uos-projects/rosix-java)
 
 > **ROSIX (Resource Operating System Interface)** 的 Java 移植实现，将 C 接口翻译为符合 Java 习惯的现代化接口，为 UOS 人机物一体化操作系统提供 Java 编程体验。
 
@@ -799,7 +799,7 @@ SOFTWARE.
 
 ## 🔗 相关链接
 
-- **🏠 项目主页**：[https://github.com/uos-projects/rosix-java-porting](https://github.com/uos-projects/rosix-java-porting)
+- **🏠 项目主页**：[https://github.com/uos-projects/rosix-java](https://github.com/uos-projects/rosix-java)
 - **📖 ROSIX 白皮书**：[https://github.com/uos-projects/uos-rosix](https://github.com/uos-projects/uos-rosix)
 - **🌐 UOS 项目**：[https://github.com/uos-projects](https://github.com/uos-projects)
 - **☕ Java 文档**：[https://docs.oracle.com/en/java/](https://docs.oracle.com/en/java/)
