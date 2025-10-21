@@ -10,7 +10,7 @@ import com.uros.rosix.workflow.WorkflowEngine;
 
 /**
  * 默认 ROSIX 工厂实现
- * 提供纯 Java 实现，不依赖本地库
+ * 提供 Java 实现
  */
 public class DefaultROSIXFactory implements ROSIXFactory {
     

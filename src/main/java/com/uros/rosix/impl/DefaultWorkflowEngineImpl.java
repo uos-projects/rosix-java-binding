@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 默认的工作流引擎实现
- * 提供复杂多资源、多阶段协同编排功能，纯 Java 实现
+ * 提供复杂多资源、多阶段协同编排功能
  */
 public class DefaultWorkflowEngineImpl implements WorkflowEngine {
     

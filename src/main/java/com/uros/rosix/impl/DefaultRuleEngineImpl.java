@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 默认的规则引擎实现
- * 提供基于规则的编程功能，纯 Java 实现
+ * 提供基于规则的编程功能
  */
 public class DefaultRuleEngineImpl implements RuleEngine {
     

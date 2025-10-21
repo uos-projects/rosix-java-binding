@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/uos-projects/rosix-java-porting)
 
-> **ROSIX (Resource Operating System Interface)** 的 Java 移植实现，将 C 接口翻译为符合 Java 习惯的现代化接口，为 UOS 人机物一体化操作系统提供纯 Java 编程体验。
+> **ROSIX (Resource Operating System Interface)** 的 Java 移植实现，将 C 接口翻译为符合 Java 习惯的现代化接口，为 UOS 人机物一体化操作系统提供 Java 编程体验。
 
 ## 🚀 项目概述
 
@@ -14,7 +14,7 @@
 - **🔄 接口移植**：将 C 接口翻译为符合 Java 习惯的现代化接口
 - **🌐 统一资源抽象**：为物理资源提供信息空间中的统一抽象
 - **🔄 多范式编程**：支持命令式、流式、规则式、编排式与 AI 驱动编程
-- **⚡ 纯 Java 实现**：不依赖本地库，完全用 Java 实现
+- **⚡ Java 实现**：完全用 Java 实现
 - **🤖 AI 原生支持**：内置智能体接口与意图驱动编程模型
 - **🔧 异步操作**：完整的异步编程支持
 - **🛡️ 类型安全**：强类型接口设计，避免运行时错误
@@ -93,7 +93,7 @@ public class QuickStart {
 - **🔒 类型安全**：使用强类型接口，避免直接映射 C 结构体
 - **⚡ 异步支持**：提供完整的异步操作接口
 - **🛡️ 异常处理**：统一的异常处理机制
-- **☕ 纯 Java 实现**：完全用 Java 实现，不依赖本地库
+- **☕ Java 实现**：完全用 Java 实现
 - **🏭 工厂模式**：使用工厂模式创建组件实例
 
 ### 架构图
@@ -117,10 +117,10 @@ public class QuickStart {
 │  │ RuleContext │ │  │WorkflowCtx  │ │  │ AgentResult │    │
 │  └─────────────┘ │  └─────────────┘ │  └─────────────┘    │
 ├─────────────────────────────────────────────────────────────┤
-│                    Pure Java Implementation                │
+│                    Java Implementation                   │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │            Java Implementation Layer               │   │
-│  │         (No Native Dependencies)                   │   │
+│  │         (Java Native Implementation)              │   │
 │  └─────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -670,7 +670,7 @@ rosix-java-binding/
 
 ### 性能优化
 
-- **Java 性能优化**：优化 Java 代码性能，减少对象创建
+- **性能优化**：优化 Java 代码性能，减少对象创建
 - **内存管理**：及时释放资源，避免内存泄漏
 - **异步处理**：使用异步接口提高并发性能
 - **缓存机制**：对频繁访问的数据进行缓存
@@ -690,7 +690,7 @@ rosix-java-binding/
 - [x] **规则引擎**：基于规则的编程支持
 - [x] **工作流编排**：复杂任务编排和执行
 - [x] **AI 智能体**：智能体创建和管理
-- [x] **纯 Java 实现**：完全用 Java 实现，不依赖本地库
+- [x] **Java 实现**：完全用 Java 实现
 - [x] **异常处理**：统一的异常处理机制
 - [x] **工厂模式**：组件创建和管理
 - [x] **示例代码**：完整的使用示例
@@ -712,7 +712,7 @@ rosix-java-binding/
 
 1. **实现完整性**：大部分功能目前抛出 `NOT_SUPPORTED` 异常
 2. **异常处理**：需要更详细的错误信息和异常处理
-3. **性能考虑**：需要优化 Java 代码性能
+3. **性能考虑**：需要优化代码性能
 4. **线程安全**：当前实现不是线程安全的
 5. **内存管理**：需要手动管理资源生命周期
 

@@ -4,7 +4,7 @@ import com.uros.rosix.core.ResourceHandle;
 
 /**
  * 默认的资源句柄实现
- * 纯 Java 实现，不依赖本地库
+ * Java 实现
  */
 public class DefaultResourceHandle implements ResourceHandle {
     

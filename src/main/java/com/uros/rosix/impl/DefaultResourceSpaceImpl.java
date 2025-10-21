@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * 默认的资源空间实现
- * 提供资源的时空语义管理功能，纯 Java 实现
+ * 提供资源的时空语义管理功能
  */
 public class DefaultResourceSpaceImpl implements ResourceSpace {
     

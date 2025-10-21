@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 默认的 ROSIX 核心实现
- * 纯 Java 实现，不依赖本地库
+ * Java 实现
  */
 public class DefaultROSIXImpl implements ROSIX {
 
@@ -21,7 +21,7 @@ public class DefaultROSIXImpl implements ROSIX {
     private int nextHandleId = 1;
 
     public DefaultROSIXImpl() {
-        // 纯 Java 实现，无需加载本地库
+        // Java 实现
     }
 
     @Override

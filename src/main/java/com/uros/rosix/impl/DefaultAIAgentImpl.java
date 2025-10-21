@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 默认的 AI 智能体实现
- * 提供意图驱动和语义理解能力，纯 Java 实现
+ * 提供意图驱动和语义理解能力
  */
 public class DefaultAIAgentImpl implements AIAgent {
     

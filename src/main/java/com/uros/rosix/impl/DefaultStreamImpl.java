@@ -9,7 +9,7 @@ import com.uros.rosix.stream.StreamStats;
 
 /**
  * 默认的流处理器实现
- * 提供实时数据处理和事件驱动计算功能，纯 Java 实现
+ * 提供实时数据处理和事件驱动计算功能
  */
 public class DefaultStreamImpl implements ROSIXStream {
     
