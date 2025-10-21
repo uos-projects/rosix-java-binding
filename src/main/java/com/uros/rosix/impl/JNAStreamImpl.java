@@ -137,3 +137,4 @@ public class JNAStreamImpl implements ROSIXStream {
             "Persistence disabling not yet implemented");
     }
 }
+

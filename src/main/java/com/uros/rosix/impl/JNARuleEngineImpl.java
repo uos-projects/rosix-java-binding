@@ -130,3 +130,4 @@ public class JNARuleEngineImpl implements RuleEngine {
         return new ArrayList<>();
     }
 }
+

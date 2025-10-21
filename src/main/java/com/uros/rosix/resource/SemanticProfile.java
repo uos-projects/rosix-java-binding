@@ -50,3 +50,4 @@ public interface SemanticProfile {
      */
     String getModel();
 }
+

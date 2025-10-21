@@ -41,3 +41,4 @@ public interface StreamStats {
      */
     double getThroughput();
 }
+

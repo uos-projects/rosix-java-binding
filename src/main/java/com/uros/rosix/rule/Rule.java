@@ -41,3 +41,4 @@ public interface Rule {
      */
     boolean isEnabled();
 }
+

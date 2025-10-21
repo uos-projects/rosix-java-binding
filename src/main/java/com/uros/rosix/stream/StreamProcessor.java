@@ -16,3 +16,4 @@ public interface StreamProcessor {
      */
     void process(byte[] data, int size, Object context);
 }
+

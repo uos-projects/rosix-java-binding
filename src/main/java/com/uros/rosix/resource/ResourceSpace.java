@@ -156,3 +156,4 @@ public interface ResourceSpace {
      */
     boolean isAdjacent(ResourceHandle handle1, ResourceHandle handle2, double threshold) throws ROSIXException;
 }
+

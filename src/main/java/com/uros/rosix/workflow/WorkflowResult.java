@@ -45,3 +45,4 @@ public interface WorkflowResult {
      */
     String getSummary();
 }
+

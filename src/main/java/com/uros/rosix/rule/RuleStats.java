@@ -34,3 +34,4 @@ public interface RuleStats {
      */
     double getSuccessRate();
 }
+

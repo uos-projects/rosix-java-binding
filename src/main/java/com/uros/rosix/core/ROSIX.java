@@ -151,3 +151,4 @@ public interface ROSIX {
      */
     CompletableFuture<Integer> writeAsync(ResourceHandle handle, byte[] data);
 }
+

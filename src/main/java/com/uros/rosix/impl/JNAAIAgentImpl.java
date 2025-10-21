@@ -123,3 +123,4 @@ public class JNAAIAgentImpl implements AIAgent {
         return new ArrayList<>();
     }
 }
+

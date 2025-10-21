@@ -153,3 +153,4 @@ public interface ROSIXStream {
      */
     void disablePersistence() throws ROSIXException;
 }
+

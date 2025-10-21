@@ -50,3 +50,4 @@ public interface ResourceRef {
      */
     String getStatus();
 }
+

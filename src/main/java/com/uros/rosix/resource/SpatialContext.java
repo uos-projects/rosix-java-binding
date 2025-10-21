@@ -48,3 +48,4 @@ public interface SpatialContext {
      */
     String getCoordinateSystem();
 }
+

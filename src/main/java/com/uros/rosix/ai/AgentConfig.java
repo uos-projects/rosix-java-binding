@@ -64,3 +64,4 @@ public interface AgentConfig {
      */
     double getTemperature();
 }
+

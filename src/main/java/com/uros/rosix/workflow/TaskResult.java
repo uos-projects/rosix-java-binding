@@ -51,3 +51,4 @@ public interface TaskResult {
      */
     int getRetryCount();
 }
+
