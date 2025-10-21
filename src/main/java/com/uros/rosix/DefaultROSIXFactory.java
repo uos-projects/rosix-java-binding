@@ -2,6 +2,7 @@ package com.uros.rosix;
 
 import com.uros.rosix.ai.AIAgent;
 import com.uros.rosix.core.ROSIX;
+import com.uros.rosix.impl.*;
 import com.uros.rosix.resource.ResourceSpace;
 import com.uros.rosix.rule.RuleEngine;
 import com.uros.rosix.stream.ROSIXStream;
