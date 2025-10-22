@@ -1,0 +1,10 @@
+com.uros.rosix
+com.uros.rosix.ai
+com.uros.rosix.core
+com.uros.rosix.example
+com.uros.rosix.impl
+com.uros.rosix.jna
+com.uros.rosix.resource
+com.uros.rosix.rule
+com.uros.rosix.stream
+com.uros.rosix.workflow

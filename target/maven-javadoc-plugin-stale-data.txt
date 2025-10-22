@@ -1,0 +1,65 @@
+-Xdoclint:none
+@options
+@packages
+-classpath
+'/Users/chun/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/chun/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/chun/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/Users/chun/Develop/uos-projects/uos-java/src/main/java'
+-author
+-bottom
+'Copyright © 2024 UOS Projects. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'ROSIX Java Porting API Documentation'
+-footer
+'Copyright © 2024 UOS Projects'
+-header
+'ROSIX Java Porting'
+-use
+-version
+-windowtitle
+'ROSIX Java Porting API Documentation'
+com.uros.rosix.impl
+com.uros.rosix.core
+com.uros.rosix.example
+com.uros.rosix
+com.uros.rosix.stream
+com.uros.rosix.rule
+com.uros.rosix.ai
+com.uros.rosix.workflow
+com.uros.rosix.jna
+com.uros.rosix.resource
+/Users/chun/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar = 1673698899000
+/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar = 1697156424000
+/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar = 1697150075000
+/Users/chun/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar = 1697151069000
+/Users/chun/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar = 1693757672000
+/Users/chun/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar = 1695178071000
+/Users/chun/Develop/uos-projects/uos-java/src/main/java = 1761021403761
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/constant-values.html = 1761095226441
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/tag-search-index.js = 1761095226513
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/overview-tree.html = 1761095226500
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/module-search-index.js = 1761095226513
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/index.html = 1761095226501
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/package-search-index.js = 1761095226513
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/serialized-form.html = 1761095226445
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/index-all.html = 1761095226524
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/allpackages-index.html = 1761095226512
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/member-search-index.js = 1761095226513
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/overview-summary.html = 1761095226526
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/help-doc.html = 1761095226527
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/element-list = 1761095226426
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/search.html = 1761095226525
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/allclasses-index.html = 1761095226512
+/Users/chun/Develop/uos-projects/uos-java/target/site/apidocs/type-search-index.js = 1761095226513
